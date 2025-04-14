@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go & Cloud-Native Learning Plan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #1a73e8;
+        }
+        .step {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e8f0fe;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .step:hover {
+            background: #d1e0ff;
+        }
+        .step h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #1a73e8;
+        }
+        .step-content {
+            display: none;
+            margin-top: 10px;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .step-content.show {
+            display: block;
+        }
+        .motivation {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .step h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Go & Cloud-Native Learning Plan</h1>
+        <div class="step">
+            <h2>Month 1-2: Master Go Basics</h2>
+            <div class="step-content">
+                <p><strong>What to Learn:</strong></p>
+                <ul>
+                    <li>Go Syntax: Variables, Functions, Structs, Interfaces.</li>
+                    <li>Concurrency: Goroutines, Channels.</li>
+                    <li>Build REST APIs with Gin or Fiber.</li>
+                    <li>Work with Databases (PostgreSQL/MongoDB).</li>
+                </ul>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li>"Go: The Complete Developer's Guide" (Udemy).</li>
+                    <li>tour.golang.org (Free).</li>
+                    <li>Tech With Tim (YouTube).</li>
+                </ul>
+                <p><strong>Project:</strong> Build a To-Do List API and host it on GitHub.</p>
+            </div>
+        </div>
+        <div class="step">
+            <h2>Month 3: Cloud Basics + Docker</h2>
+            <div class="step-content">
+                <p><strong>What to Learn:</strong></p>
+                <ul>
+                    <li>Cloud Computing Basics (AWS, Containers).</li>
+                    <li>Build Docker Containers for Go apps.</li>
+                    <li>Deploy to Heroku or AWS ECS.</li>
+                </ul>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li>"Docker & Kubernetes: The Practical Guide" (Udemy).</li>
+                    <li>TechWorld with Nana (YouTube).</li>
+                </ul>
+                <p><strong>Project:</strong> Dockerize your To-Do API and deploy it to AWS/Heroku.</p>
+            </div>
+        </div>
+        <div class="step">
+            <h2>Month 4-5: Kubernetes + Microservices</h2>
+            <div class="step-content">
+                <p><strong>What to Learn:</strong></p>
+                <ul>
+                    <li>Build Microservices with Go.</li>
+                    <li>Kubernetes Basics (Manage Containers).</li>
+                    <li>Use gRPC for efficient APIs.</li>
+                </ul>
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    <li>"Learn Kubernetes from Scratch" (Udemy).</li>
+                    <li>kodekloud.com (Labs).</li>
+                    <li>Go gRPC Docs.</li>
+                </ul>
+                <p><strong>Project:</strong> Build a Microservices app (e.g., Users + Products) and deploy it on Kubernetes.</p>
+            </div>
+        </div>
+        <div class="step">
+            <h2>Month 6: LinkedIn Profile + Job Hunt</h2>
+            <div class="step-content">
+                <p><strong>What to Do:</strong></p>
+                <ul>
+                    <li>LinkedIn Headline: "Go Developer | Cloud-Native Enthusiast".</li>
+                    <li>Add Projects: APIs, Microservices (GitHub links).</li>
+                    <li>Skills: Go, Docker, Kubernetes, AWS, gRPC.</li>
+                    <li>Certifications: CKAD or AWS Certified Developer (Optional).</li>
+                    <li>Apply for Remote Jobs: We Work Remotely, Remote.co.</li>
+                </ul>
+                <p><strong>Final Project:</strong> Build a full app (e.g., Delivery System) with Go + Microservices + Kubernetes.</p>
+            </div>
+        </div>
+        <p class="motivation">Keep coding, and you'll land that remote job! 🚀</p>
+    </div>
+
+    <script>
+        const steps = document.querySelectorAll('.step');
+        steps.forEach(step => {
+            step.addEventListener('click', () => {
+                const content = step.querySelector('.step-content');
+                content.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
